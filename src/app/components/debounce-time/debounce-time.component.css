@@ -1,0 +1,4 @@
+.search-container { max-width: 400px; margin: auto; padding: 20px; }
+    input { width: 100%; padding: 8px; margin-bottom: 10px; }
+    ul { list-style: none; padding: 0; }
+    li { padding: 5px; border-bottom: 1px solid #ddd; }

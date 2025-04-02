@@ -1,0 +1,20 @@
+<h6>{{currentRole}}</h6>
+<h2>Admins</h2>
+<ul *ngIf="admins.length > 0; else noAdmins">
+  <li *ngFor="let admin of admins">
+    <strong>{{ admin.name }}</strong> ({{ admin.email }})
+  </li>
+</ul>
+<ng-template #noAdmins>
+  <p>No admins found.</p>
+</ng-template>
+
+<h2>Regular Users</h2>
+<ul *ngIf="regularUsers.length > 0; else noUsers">
+  <li *ngFor="let user of regularUsers">
+    <strong>{{ user.name }}</strong> ({{ user.email }})
+  </li>
+</ul>
+<ng-template #noUsers>
+  <p>No regular users found.</p>
+</ng-template>

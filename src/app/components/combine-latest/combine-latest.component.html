@@ -1,0 +1,38 @@
+<div class="my-3">
+    <h2>Combine Latest</h2>
+    <br>
+
+    <div class="row">
+        <div class="col-md-3 pr-4">
+            <strong>Names</strong>
+            <hr>
+            <select class="form-control" #name>
+                <option *ngFor="let item of names" [value]="item">
+                    {{item}}
+                </option>
+            </select>
+            <br>
+            <br>
+            <strong>Colors</strong>
+            <hr>
+            <select class="form-control" #color>
+                <option *ngFor="let item of colors" [value]="item">
+                    {{item}}
+                </option>
+            </select>
+        </div>
+        <div class="col-md-9 ml-auto">
+            <strong>Combine Latest</strong>
+            <hr>
+            <div class="wrapper">
+                <div [ngStyle]="{'background': selectedColor, 'color': 'white'}">
+                    {{ selectedName }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+   
+
